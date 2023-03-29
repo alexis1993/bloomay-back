@@ -1,8 +1,10 @@
 import express, { Express } from 'express';
 import userRouter from './controllers/userController'
+import { connectAT } from './airTable/airTable';
 
 export const app: Express = express();
 const port = 3000;
+export const baseAT = connectAT();
 app.use(function (req, res, next) {
 
   // Website you wish to allow to connect

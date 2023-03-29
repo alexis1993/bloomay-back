@@ -5,7 +5,7 @@ import { getUsers } from '../services/userService';
 const userRouter = express.Router();
 
 userRouter.get('/', async (req: Request, res: Response) => {
-    const users : Array<IUser> = getUsers()
+    const users : Array<IUser> = await getUsers()
     res.status(200).send({users});
 });
 
