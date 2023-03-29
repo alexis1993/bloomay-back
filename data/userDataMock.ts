@@ -26,6 +26,19 @@ export const missions = [
         },
     },
     {
+      id: '5',
+      label: 'lead',
+      beginDate: '2023-03-31',
+      endDate: '2023-06-01',
+      missionType: 'freelance',
+      freelance: {
+        id: '5',
+        firstname: 'edie',
+        lastname: 'dupont',
+        email: 'eddie.dupont@toto.fr',
+      },
+  },
+    {
         id: '3',
         label: 'DevOpps',
         beginDate: '2023-03-30',
